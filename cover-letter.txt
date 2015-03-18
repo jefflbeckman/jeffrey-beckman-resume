@@ -1,0 +1,14 @@
+
+Sample I'll be basing off of:
+
+I am very excited to hear of your available Software Engineer position, and formally submit my resume for consideration. I am sure you have received many candidates for this position, so allow me to present a few reasons why you should consider me.
+
+I am a hands-on Software Developer, Project Team Leader, and Software Development/Support Manager with 13 years of application design, development, and support experience. I have developed console, client, database, and website applications using current versions of Microsoft Visual Studio (Frameworks: 1.1, 2.0, 3.5, 4.0), TFS, SQL Server, and other products. I have managed multiple simultaneous development projects from project initiation through implementation in addition to having 10+ FTE direct reports and 2 consultants.
+
+Currently, I am a Development Team Lead and Development Team Resource Manger at DataConsortum. I provide direction and interaction with the developer’s daily tasks and projects, along with the general managerial responsibilities of 10+ direct reports. I also lead daily agile/scrum meetings for medium and large projects, providing technical direction and decision process for all aspects of application development, security, and infrastructure. I have defined processes and procedures, including implementing .Net coding standards, SQL development standards, project and task management standards, and misc. process refinements.
+
+Previously, I was a lead software engineer/developer at VendCL and MLN Life Insurance Company. At both companies, I lead the development process for all major projects utilizing C#, VB.Net, ASP.Net, and SQL Server. Additionally, I was the lead automation developer and technical systems analyst on the Systems Support Team at Fingerhut Direct Marketing with the goal to automate processes and procedures of the support team; this included creating a C# WinForms application and various windows services to process XML messages in MSMQ. While at Allianz Life, I was the lead developer and technical resource for the Java based Customer Resource Management system, in conjunction with C# in .NET 1.1 and 2.0 WinForms applications, console applications/jobs, and Windows Services. In the absence of various IT roles, I have also acted as a project manager, business analyst, quality analyst, technical support, and database administrator.
+
+Currently, I am working on a Master of Science degree in Information Technology with a specialization in Enterprise Software Architecture. I anticipate completing the degree by the end of next year, and will continue to further my IT education for an additional Masters or Doctoral degree.
+
+I am positive that I can bring your company many benefits with my experience, background, and forward thinking. I look forward to hearing from you at your earliest convenience. Thank you for your consideration.
