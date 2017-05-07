@@ -1,0 +1,18 @@
+Dear Recruiter,
+
+You are seeking a software engineer to fill a {{position}} role {{$remote}} in {{location}}{{/remote}}. I have several years of hands-on experience writing low level embedded software, and I would love the opportunity to work on some of {{company}}'s  exceptional products. Through my time as a support engineer for a real time operating system, I am already well on my way to becoming an expert in safety-critical embedded applications. I also have a well developed understanding of the C programming language. I hope that my technical expertise will accent your team.
+
+I enjoy being challenged, and am proactive, going after the most difficult problems I can find. This behaviour has led me to tackle my private pilot license while also working full time. My enthusiasm for dance and juggling has led me to additional side projects as well, augmenting my software skills with hardware and manufacturing design of a smart LED prop.
+
+I have a long history of excellent debugging skills, in both hardware and software. In high school, I competed regularly in computer science competitions, while my rigorous university studies allowed me to learn the nuanced methodology behind debugging hardware. My current employment has been exercising these debugging skills daily on the most difficult problems facing safety-critical operating systems. I've tackled some of the most difficult bugs facing the operating system, even discovering hardware errata related to caching. I interface with {{industry}} customers regularly, and I understand the common bugs and issues that arise from {{industry_software}}. I would like the opportunity to tackle some of {{company}}'s more difficult problems as well.
+
+{{#has_custom_paragraph}}
+{{custom_paragraph}}
+{{/has_custom_paragraph}}
+
+Thank you for your time and consideration. I look forward to speaking with you about this opportunity soon. I am available at any time at my email below, or by phone during regular business hours.
+
+Sincerely,
+Jeffrey Beckman
+jefflbeckman@gmail.com
+(214)-477-4069
