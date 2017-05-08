@@ -20,21 +20,31 @@
 \usepackage{color}
 \definecolor{mygrey}{gray}{0.75}
 \textheight=9.75in
-\raggedbottom
+%\raggedbottom
 
 \setlength{\tabcolsep}{0in}
 
-\linespread{0.8}
-\newcommand{\isep}{-2 pt}
-\newcommand{\lsep}{-0.2cm}
-\newcommand{\psep}{-0.6cm}
-\renewcommand{\labelitemii}{$\circ$}
+%adjust to "compress" document to fit in more whitespace or content
+\linespread{0.9}
+
 
 \pagestyle{empty}
+
+% Removes hyphenation per https://tex.stackexchange.com/questions/5036/how-to-prevent-latex-from-hyphenating-the-entire-document
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+
 %-----------------------------------------------------------
 
 
 %------Custom commands---------------------------------
+
+\newcommand{\isep}{-1 pt}
+\newcommand{\lsep}{-0.2cm}
+\newcommand{\psep}{-0.6cm}
+\renewcommand{\labelitemii}{$\circ$}
 
 \newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
 
@@ -77,8 +87,8 @@
 \hfill
 \begin{minipage}[t]{7cm}
 \begin{flushright}
-\indent 410 W Micheltorena St \#6 \\
-\indent Santa Barbara, CA 93101 \\
+\indent 8283 Alton Dr \\
+\indent Lemon Grove, CA 91945 \\
 \indent Mobile: \textbf{(214)-477-4069} \\[\lsep]
 \end{flushright}
 \end{minipage}
@@ -88,15 +98,12 @@
 %-------------Education-----------------------------------
 
 \resheading{\textbf{Education} }\\[\lsep]
-\\
 
 \indent \begin{tabular}{   l  l  r  r } 
 % 4 columns with the left two justified to the left, 
 % and the right two justified to the right
 
 Rose-Hulman Institute of Technology\indent & B.S in Electrical Engineering & \indent Feb 2011\indent & \indent 3.1/4.0 \\
-
-Science and Engineering Magnet\indent  	& High School 					& \indent May 2007\indent & \indent 3.2/4.0 \\[0.2cm]
 \end{tabular}
 
 %-----------------------------------------------------------
@@ -108,16 +115,17 @@ Science and Engineering Magnet\indent  	& High School 					& \indent May 2007\in
 \begin{itemize}
 \item 
 \workexp{Field Consultant Engineer}{Green Hills Software, Santa Barbara CA}{July '11 - Now}{}
-\\[-0.2cm]
+\\[-0.3cm]
 	\begin{itemize}\itemsep \isep
-	\item Provided technical support for embedded development tools including a JTAG probe, C/C++ compiler, breakpoint and trace debugger, and real-time operating system
+	\item Provided technical support for embedded development tools including real-time operating system, C/C++ compiler, trace debugger, and JTAG debug probe
 	\item Helped customers debug embedded programming problems on ARM, PowerPC, and x86
 	\item Wrote testcases in C and C++ to reproduce behaviors based on customer's descriptions, requiring an in-depth knowledge of hardware, C language, and operating system concepts
 	\item Communicated with customers daily to convey technical concepts in accessible language
-	\item Became an in-house expert on the operating system, helping answer the most difficult questions on the operating system from the salesmen and other support engineers
+	\item  Answered the most difficult questions on the operating system, becoming an in-house expert on the operating system, and supervising the RTOS support mailing list
 	\item Managed 5-10 short and long term projects simultaneously
 	\item Updated a comprehensive changelog for certification purposes
-	\item Wrote several small programs in C, C++, and Python, as well as dozens of technical articles to help solve common problems
+	\item Authored several small programs in C, C++, and Python, as well as dozens of technical articles to help solve common problems
+	\item Optimized slow performing flash driver, realizing dramatically faster boot times for the OS and better average access times
 	\end{itemize}
 
 \item
@@ -140,14 +148,15 @@ Science and Engineering Magnet\indent  	& High School 					& \indent May 2007\in
 
 \begin{itemize}
 \item \workexp{Green Light Props}{Santa Barbara CA}{May '12 - Now}{greenlightprops.com}
-\\[-0.2cm]
-	\begin{itemize}
+\\[-0.3cm]
+	\begin{itemize} \itemsep \isep
 	\item Founded company to design and manufacture smart LED dance props
 	\item Designed custom PCB with an ARM based chip using an 802.15.4 radio, accelerometer, LED driver, and battery charging through USB
 	\item Molded round rubber enclosure to resist high impact and diffuse light from LEDs
 	\item Architected firmware in C including a lightweight, low power mesh network
 	\item Programmed gesture recognition test program in Qt5 and OpenGL to visualize patterns
 	\item Configured web server, mail server, and forum for discussion on the prop's design
+	\item Built iOS app for vision impaired users to read playing cards using OpenCV
 	\end{itemize}
 \end{itemize}
 %-----------------------------------------------------------
@@ -158,11 +167,16 @@ Science and Engineering Magnet\indent  	& High School 					& \indent May 2007\in
 \resheading{\textbf{Programming Proficiency} }\\[\lsep]
 \begin{itemize}
 %these will all be on the same line, include a whitespace at the end of each list
+<<<<<<< HEAD
 \item \noindent \textbf{Languages} (C, C++, Golang, Python, Asm, Shell)  
 \textbf{OS} (INTEGRITY, Contiki, TinyOS, Linux, Windows) 
+=======
+\item \noindent \textbf{Languages} (C, C++,, Python, Go, Asm, Shell)  
+\textbf{OS} (INTEGRITY, Contiki, iOS, Linux, Windows) 
+>>>>>>> Fixed line seperation format issue in side project section. Also added
 \textbf{Arch} (ARM, PowerPC, x86, MIPS, Coldfire) 
 \textbf{Tools} (git, svn, gdb, EAGLE, MATLAB, Maple, SPICE) 
-\textbf{Hardware} (reverse engineering, SMT rework, high-speed digital, high-speed analog)
+\textbf{Hardware} (reverse engineering, SMT rework, high-speed digital, analog)
 \end{itemize} 
 %-----------------------------------------------------------
 
@@ -173,7 +187,7 @@ Science and Engineering Magnet\indent  	& High School 					& \indent May 2007\in
 \\[0.2cm]
 \indent \begin{tabular}{   l  l  l  l } 
 \indent Private Pilot License & \indent 40 hr PIC & \indent 130hr TT  \indent & \indent Feb 2014\\
-\indent Juggling, Dance, Ballet, Choreography \indent \indent \indent & \indent    & \indent  & \indent Jan 2010 \\
+\indent Juggling, Dance, Choreography \indent \indent \indent & \indent    & \indent  & \indent Jan 2010 \\
 \indent Computer Security, CTFs, DEFCON & \indent  & \indent  & \indent Aug 2012\\
 \indent Ham Radio Technician & \indent  & \indent  & \indent Jan 2007\\
 \end{tabular}
