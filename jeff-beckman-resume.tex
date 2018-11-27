@@ -8,14 +8,10 @@
 \usepackage{palatino}
 \usepackage{tabularx}
 \usepackage{setspace}
-\fontfamily{SansSerif}
 \selectfont
 
 \usepackage[T1]{fontenc}
-\usepackage
-%[ansinew]
-[utf8]
-{inputenc}
+\usepackage[utf8x]{inputenc}
 
 \usepackage{color}
 \definecolor{mygrey}{gray}{0.75}
@@ -41,19 +37,14 @@
 
 %------Custom commands---------------------------------
 
-\newcommand{\isep}{-1 pt}
+% vertical distance between items
+\newcommand{\isep}{0 pt}
+
 \newcommand{\lsep}{-0.2cm}
 \newcommand{\psep}{-0.6cm}
 \renewcommand{\labelitemii}{$\circ$}
 
-\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
-
 \newcommand{\resheading}[1]{{\small \colorbox{mygrey}{\begin{minipage}{0.975\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
-
-\newcommand{\ressubheading}[3]{
-\begin{tabular*}{6.62in}{l @{\extracolsep{\fill}} r}
-	\textsc{{\textbf{#1}}} & \textsc{\textit{[#2]}} \\
-\end{tabular*}\vspace{-8pt}}
 
 \newcommand{\workexp}[4]{
 \begin{minipage}[t]{7cm}
@@ -69,6 +60,7 @@
 \indent #4 \\
 \end{flushright}
 \end{minipage}
+\\[-0.10in]
 }
 %-----------------------------------------------------------
 
@@ -89,7 +81,7 @@
 \begin{flushright}
 \indent 8283 Alton Dr \\
 \indent Lemon Grove, CA 91945 \\
-\indent Mobile: \textbf{(214)-477-4069} \\[\lsep]
+\indent Mobile: \textbf{(214)-477-4069}
 \end{flushright}
 \end{minipage}
 %-----------------------------------------------------------
@@ -97,7 +89,7 @@
 
 %-------------Education-----------------------------------
 
-\resheading{\textbf{Education} }\\[\lsep]
+\resheading{\textbf{Education}}
 
 \indent \begin{tabular}{   l  l  r  r } 
 % 4 columns with the left two justified to the left, 
@@ -111,24 +103,25 @@ Rose-Hulman Institute of Technology\indent & B.S in Electrical Engineering & \in
 
 %--------Work Experience--------------------------------
 
-\resheading{\textbf{Work Experience} }\\[\lsep]
+\resheading{\textbf{Work Experience}}
 \begin{itemize}
 \item
 \workexp{Firmware Engineer}{Fitbit, San Diego CA}{Aug '17 - Now}{}
-\\[-0.3cm]
-	\begin{itemize}\itemsep \isep Authored custom drivers for tightly contrained embedded system
-	\begin{itemize}\itemsep \isep Implemented a comprehensive full-stack debugging solution, ultimately realizing a stable and testable platform
-	\begin{itemize}\itemsep \isep Provided on-site manufacturing support, significantly improving yields and quality above industry standards
-
-
-
+	\begin{itemize}\itemsep \isep
+	    \item Authored custom platform independent  drivers for tightly constrained embedded system
+	    \item Implemented a comprehensive full-stack debugging solution for eliminating crashes and producing key performance metrics, ultimately realizing a stable firmware platform
+	    \item Provided on-site manufacturing support, significantly improving yields and quality above industry standards for a new flagship product
+	    \item Maintained code base and build systems for multiple cross-platform systems
+	   \item Lead cross functional manufacturing support team to develop lasting procedures and tools
+    \end{itemize}
 
 \item
 \workexp{Field Consultant Engineer}{Green Hills Software, Santa Barbara CA}{July '11 - May '17}{}
-\\[-0.3cm]
 	\begin{itemize}\itemsep \isep
-	\item Provided expert technical support for embedded development tools including RTOS, C/C++ compiler, and debugger
+	\item Provided expert support for embedded development tools including RTOS, C/C++ compiler, debugger, and probe.
 	\item Conveyed technical concepts to customers through code samples and accessible language
+	\item Optimized slow performing embedded code to dramatically shorten RTOS boot times
+	\item Consistently provided solutions to complex issues in time critical situations
 	\end{itemize}
 
 \item
@@ -147,19 +140,17 @@ Rose-Hulman Institute of Technology\indent & B.S in Electrical Engineering & \in
 
 %---------Side Projects-----------------------------------
 
-\resheading{\textbf{Side Projects}}\\[\lsep]
+\resheading{\textbf{Side Projects}}
 
 \begin{itemize}
-\item \workexp{Green Light Props}{Santa Barbara CA}{May '12 - Now}{greenlightprops.com}
-\\[-0.3cm]
+\item \workexp{Green Light Props}{}{May '12 - Now}{}
+\\[-0.3in]
 	\begin{itemize} \itemsep \isep
-	\item Founded company to design and manufacture smart LED dance props
-	\item Designed custom PCB with an ARM based chip using an 802.15.4 radio, accelerometer, LED driver, and battery charging through USB
-	\item Molded round rubber enclosure to resist high impact and diffuse light from LEDs
-	\item Architected firmware in C including a lightweight, low power mesh network
+	\item Personal design, manufacturing, and repair for smart LED dance props
+	\item Designed custom PCBs for wireless sensors and interactive devices
 	\item Programmed gesture recognition test program in Qt5 and OpenGL to visualize patterns
-	\item Configured web server, mail server, and forum for discussion on the prop's design
 	\item Built iOS app for vision impaired users to read playing cards using OpenCV
+	\item Engaged in contract work for clients needing custom engineering
 	\end{itemize}
 \end{itemize}
 %-----------------------------------------------------------
@@ -167,30 +158,27 @@ Rose-Hulman Institute of Technology\indent & B.S in Electrical Engineering & \in
 
 %------------Programming Proficiency------------------
 
-\resheading{\textbf{Programming Proficiency} }\\[\lsep]
+\resheading{\textbf{Programming Proficiency} }
 \begin{itemize}
-%these will all be on the same line, include a whitespace at the end of each list
-\item \noindent \textbf{Languages} (C, C++, Python, Go, Asm, Shell)  
-\textbf{OS} (INTEGRITY, Contiki, iOS, Linux, Windows) 
-\textbf{Arch} (ARM, PowerPC, x86, MIPS, Coldfire) 
-\textbf{Tools} (git, svn, gdb, EAGLE, MATLAB, Maple, SPICE) 
-\textbf{Hardware} (reverse engineering, SMT rework, high-speed digital, analog)
+%these will all be on the same line
+\item \noindent \textbf{Languages} (C, C++, Asm, Python, Javascript, Go, Rust, Java, Make, Bash, Chinese, Japanese)
+\textbf{RTOS} (Nuttx, INTEGRITY, Contiki, Linux) 
+\textbf{Tools} (git, svn, gdb, MATLAB, LabView, SPICE) 
+\textbf{Hardware} (soldering, reverse engineering, SMT rework, high-speed digital, analog)
 \end{itemize} 
 %-----------------------------------------------------------
 
 
 %------Other Interests------------------------------------
 
-\resheading{\textbf{Other Interests} }\\[\lsep]
-\\[0.2cm]
+\resheading{\textbf{Other Interests} }
+\\[9pt]
 \indent \begin{tabular}{   l  l  l  l } 
 \indent Private Pilot License & \indent 40 hr PIC & \indent 130hr TT  \indent & \indent Feb 2014\\
 \indent Juggling, Dance, Choreography \indent \indent \indent & \indent    & \indent  & \indent Jan 2010 \\
+\indent \indent \textit{Performance Arts resume available upon request}  \\
 \indent Computer Security, CTFs, DEFCON & \indent  & \indent  & \indent Aug 2012\\
-\indent Ham Radio Technician & \indent  & \indent  & \indent Jan 2007\\
 \end{tabular}
-
-
 
 %-----------------------------------------------------------
 
