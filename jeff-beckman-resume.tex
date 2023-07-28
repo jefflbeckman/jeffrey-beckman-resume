@@ -1,7 +1,6 @@
 \documentclass[a4paper,11pt]{article}
 
 %-------------Preamble------------------------------------
-
 \usepackage[top=0.75in, bottom=0.75in, left=0.55in, right=0.85in]{geometry}
 \usepackage{graphicx}
 \usepackage{url}
@@ -31,12 +30,10 @@
 \emergencystretch=\maxdimen
 \hyphenpenalty=10000
 \hbadness=10000
-
 %-----------------------------------------------------------
 
 
 %------Custom commands---------------------------------
-
 % vertical distance between items
 \newcommand{\isep}{0 pt}
 
@@ -64,11 +61,9 @@
 }
 %-----------------------------------------------------------
 
-
 \begin{document}
 
 %-------------Heading-------------------------------------
-
 \begin{minipage}[t]{7cm}
 \begin{flushleft}
 \textsc{Jeffrey Beckman} \\
@@ -87,31 +82,17 @@
 %-----------------------------------------------------------
 
 
-%-------------Education-----------------------------------
-
-\resheading{\textbf{Education}}
-
-\indent \begin{tabular}{   l  l  r  r } 
-% 4 columns with the left two justified to the left, 
-% and the right two justified to the right
-
-Rose-Hulman Institute of Technology\indent & B.S in Electrical Engineering & \indent Feb 2011\indent & \indent 3.1/4.0 \\
-\end{tabular}
-
-%-----------------------------------------------------------
-
-
 %--------Work Experience--------------------------------
-
 \resheading{\textbf{Work Experience}}
 \begin{itemize}
 \item
-\workexp{Software Development Engineer L5}{Amazon Lab 126, Austin Tx}{April '19 - Now}{}
+\workexp{Software Development Engineer}{Amazon Lab 126, Austin Tx}{April '19 - Now}{}
     \begin{itemize}\itemsep \isep
-    	\item Externalized build automation by porting build steps from custom Amazon CI tool into 3rd party accessible tooling and authoring extensive documentation for customer onboarding
-    	\item Created crash reporting automation tool used to increase device stability on new operating system by reducing total number of freezes and crashes
+    	\item Gathered developer metrics for build times, MTTR, MTTD, and more through integrating Yocto and AWS
+    	\item Produced a Triage Guide and forensic tools for Yocto based OS that is used daily by hundreds of QA's and engineers for detecting and debugging issues
+    	\item Delivered integrated crash reporting automation tool used to increase device stability on new operating system by reducing total number of freezes and crashes
     	\item Designed and implemented stability KPI reporting for new operating system used by QA to sign off on releases and for executive leadership to estimate program velocity
-    	\item Built device middleware features for multiple time synchronization components
+    	\item Built device middleware for timezone synchronization, LED control, frustration free setup
         \item Delivered platform agnostic API for devices to maintain a secure and persistent connection to AWS IoT using an MQTT client
         \item Personally involved in shipping several successful devices to millions of customers with consistently high customer ratings
     \end{itemize}
@@ -142,35 +123,34 @@ Rose-Hulman Institute of Technology\indent & B.S in Electrical Engineering & \in
 %-----------------------------------------------------------
 
 
-%---------Side Projects-----------------------------------
-
-\resheading{\textbf{Side Projects}}
-
-\begin{itemize}
-\item \workexp{Custom Prop Engineering}{}{}{}
-\\[-0.3in]
-	\begin{itemize} \itemsep \isep
-	\item Personal design, manufacturing, and repair for smart LED dance props
-	\item Designed custom PCBs for wireless sensors and interactive devices
-	\item Programmed gesture recognition test program to visualize patterns
-	\item Built iOS app for vision impaired users to read playing cards
-	\end{itemize}
-\end{itemize}
-%-----------------------------------------------------------
 
 
-%------------Programming Proficiency------------------
 
-\resheading{\textbf{Programming Proficiency}}
+
+
+%------------Technical Skils------------------
+\resheading{\textbf{Technical Skills}}
 \begin{itemize}
 %these will all be on the same line
 \item \noindent
     \textbf{Languages} (Rust, C, C++, Asm, Python, Ruby, Typescript, Vue.js, Svelte, SQL, Make, Bash)\\
     \textbf{OS} (Embedded Linux, Yocto, FreeRTOS, Nuttx, INTEGRITY, Contiki, Android)\\
+    \textbf{DevOps} (AWS Cloud, Terraform, IaC, Jenkins, Github, Docker, Kerberos, Gerrit)\\
     \textbf{IoT Protocols} (MQTT, Thread, Wifi, Bluetooth, Zigbee, Cellular, LoRa, GPS) \\
     \textbf{Hardware} (Industry 4.0, Device Manufacturing, PCB Design, SMT rework, high-speed digital)\\
     \textbf{Other Interests} (Private Pilot License 130hr TT, Juggling, Ballet and Contemporary Dance)
 \end{itemize} 
+%-----------------------------------------------------------
+
+%-------------Education-----------------------------------
+\resheading{\textbf{Education}}
+
+\indent \begin{tabular}{   l  l  r  r } 
+% 4 columns with the left two justified to the left, 
+% and the right two justified to the right
+
+Rose-Hulman Institute of Technology\indent & B.S in Electrical Engineering & \indent Feb 2011\indent & \indent 3.1/4.0 \\
+\end{tabular}
 %-----------------------------------------------------------
 
 \end{document}
